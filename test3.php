@@ -1,5 +1,14 @@
-require_once 'Structures/Graph.php';
-require_once 'Structures/Graph/Node.php';
+<html>
+<head>
+  <meta http-equiv="Content-Type" 
+      content="text/html; charset=iso-8859-1">
+  <title>Test 3</title>
+</head>
+<body bgcolor="#f800f8">
+  <h1>
+<?php
+  require_once 'Structures/Graph.php';
+  require_once 'Structures/Graph/Node.php';
  
 $nonDirectedGraph = new Structures_Graph(false);
  
@@ -27,3 +36,7 @@ foreach($vertices as $vertex) {
     $data = preg_split("/-/",$vertex);
     $nodes[$data[0]]->connectTo($nodes[$data[1]]);
 }
+  ?>
+</body>
+</html>
+  
