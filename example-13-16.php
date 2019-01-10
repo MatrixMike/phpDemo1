@@ -6,18 +6,33 @@
 </head>
 <body bgcolor="#f800f8">
   <h1>
+	  
 <?php
-$a = gmp_mul(35, gmp_pow(10,405));
-$b = gmp_mul(28, gmp_pow(10,405));
+$mul = gmp_mul("12345678", "2000");
+echo gmp_strval($mul) . "\n";
+?>
+<?php echo "<br>1"; ?>
+
+<?php
+echo gmp_strval(gmp_pow(4,4)); //This would give the answer as 256
+?>
+<?php echo "<br>2"; ?>
+<?php
+$a = gmp_mul(35, 35);
+$b = gmp_mul(28, 28);
 
 print gmp_strval($a);
+?>
+<?php echo "<br>3"; ?>
+<?php  
 echo "$a";
 print gmp_strval($b);
 print "xx";
 $a_squared = gmp_pow($a, 2);
 $b_squared = gmp_pow($b, 2);
-print "yy";
-print gmp_strval($a_squared);
+print "yy";?>
+<?php echo "<br>4"; ?>
+<?php print gmp_strval($a_squared);
 
 $hypotenuse = gmp_sqrt(gmp_add($a_squared, $b_squared));
 
