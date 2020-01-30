@@ -1,5 +1,7 @@
-example execution line
+example execution line2
 
-<?php echo "hello\n" ?>
+1. <?php echo "hello\n" ?>
+
+2. php -r 'phpinfo();'
 
 
